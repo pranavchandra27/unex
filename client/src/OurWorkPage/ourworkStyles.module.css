@@ -1,0 +1,180 @@
+.wrapperPortfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rem;
+}
+
+.portfolio_title {
+  text-align: center;
+  font-size: 35px;
+  background-color: #08aeea;
+  background-image: linear-gradient(45deg, #09009f -30%, #00ff959f 80%);
+  -webkit-background-clip: text;
+  /* // make fill color to transparent so that masked background color will be shown */
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+}
+
+#titleParagraph {
+  font-size: 24px;
+  line-height: 1.7;
+  letter-spacing: -0.1px;
+  max-width: 760px;
+  width: 95%;
+  margin: auto;
+  color: black;
+  text-align: center;
+}
+
+.ourworkcontact {
+  background-color: #047aa5;
+  background-image: linear-gradient(0deg, #2af59a7e 0%, #047aa5 100%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+}
+
+.contactbackground {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.ourworkcontactButton {
+  margin-top: 5rem;
+}
+
+.ourworkcontactButton a {
+  padding: 35px 65px;
+  width: 220px;
+  border-radius: 100px;
+  font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif !important;
+  cursor: pointer;
+  background-size: 200%;
+  background-image: linear-gradient(to left, #000758, #054d4d, #4d94ff);
+  color: white;
+  font-weight: bold;
+  transition: 0.6s;
+}
+
+.ourworkcontactButton a:hover {
+  background-position: right;
+}
+
+.footerwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.footernumber {
+  text-align: center;
+  width: 33%;
+}
+.companyemail {
+  text-align: center;
+  width: 33%;
+}
+
+.footerlogo {
+  text-align: center;
+  width: 33%;
+}
+@media (max-width: 1368px) {
+  .portfolio_title {
+    font-size: 26px;
+  }
+
+  #titleParagraph {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .portfolio_title {
+    font-size: 25px;
+  }
+  .ourworkcontact {
+    height: 350px;
+    padding-top: 2rem;
+  }
+  .contactbackground {
+    font-size: 40px;
+  }
+  .ourworkcontactButton {
+    margin-top: 5rem;
+  }
+
+  .ourworkcontactButton a {
+    padding: 25px 50px;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio_title {
+    font-size: 18px;
+  }
+  #titleParagraph {
+    font-size: 18px;
+  }
+  .ourworkcontact {
+    height: 300px;
+    padding-top: 2rem;
+  }
+  .contactbackground {
+    font-size: 30px;
+  }
+  .ourworkcontactButton {
+    margin-top: 3rem;
+  }
+
+  .ourworkcontactButton a {
+    padding: 20px 40px;
+  }
+
+  .footerwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5rem 0;
+  }
+
+  .footernumber {
+    text-align: center;
+    width: 100%;
+  }
+  .companyemail {
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .footerlogo {
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .portfolio_title {
+    font-size: 15px;
+  }
+  .contactbackground {
+    font-size: 26px;
+  }
+
+  .ourworkcontact {
+    height: 250px;
+    padding-top: 2rem;
+  }
+  .ourworkcontactButton a {
+    padding: 18px 35px;
+  }
+}
