@@ -45,7 +45,7 @@ class App extends Component {
         <AppContainer>
           <AnimatedNavbar duration={this.state.duration} />
           <motion.div
-            initial={{ opacity: 0, height: "25vh" }}
+            initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}>
             <Frontpage />

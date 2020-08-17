@@ -104,6 +104,11 @@
   background-position: right;
 }
 
+.msg-sent-page {
+  text-align: center;
+  padding: 1rem 0;
+}
+
 .msgSent {
   color: white;
   border: white 1px solid;
@@ -138,9 +143,10 @@
 }
 
 .footerwrapper {
-  margin-top: 10rem;
+  margin: 5rem 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
   width: 100%;
 }
 
@@ -159,7 +165,6 @@
   position: relative;
   text-align: center;
   width: 33%;
-  bottom: 69px;
 }
 
 .copyrightsinfo {
@@ -211,8 +216,11 @@
   #titleSummary {
     font-size: 20px;
   }
+
   .footerwrapper {
     flex-direction: column;
+    top: 150px;
+    margin: 3rem 0;
   }
 
   .footernumber {
@@ -224,6 +232,7 @@
 
   .footerlogo {
     width: 100%;
-    bottom: -160px;
+    bottom: 0;
+    margin: 2rem 0;
   }
 }

@@ -196,8 +196,7 @@ class MyContact extends Component {
                         ? "msg-sent-page msgAppear-page"
                         : "msg-sent-page"
                     }>
-                    {" "}
-                    Thank you we'll get back to shortly!{" "}
+                    Thank you we'll get back to shortly!
                   </div>
 
                   <div className={styles.description}>

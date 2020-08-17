@@ -139,7 +139,7 @@ class Contact extends Component {
           <div
             className='msg-sent'
             className={this.state.sent ? "msg-sent msgAppear" : "msg-sent"}>
-            Thank you we'll get back to shortly!{" "}
+            Thank you we'll get back to shortly!
           </div>
 
           <div class='description'>

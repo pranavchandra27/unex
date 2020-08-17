@@ -124,20 +124,19 @@ p {
   background-position: right;
 }
 
-.curved {
-  /* background: red ;
-  color: white; */
+/* .curved {
+
   text-align: center;
   position: absolute;
   top: 70px;
   width: 100%;
   height: 100px;
   z-index: 1;
-}
+} */
 
-.curved svg {
+/* .curved svg {
   display: block;
-}
+} */
 
 .sc-AxhUy {
   z-index: 2;
@@ -150,18 +149,13 @@ p {
 }
 
 #main-frontpage {
-  padding: 0 1rem;
-  margin-top: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
-  bottom: 600px;
+  padding: 0 1rem;
   font-weight: 700;
   line-height: 1.5;
-  left: 0px;
   font-family: poppins;
-  z-index: 10;
 }
 
 .main-text {
@@ -291,50 +285,51 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  bottom: 26em;
   background: white;
   width: 100%;
   height: 200px;
-  margin-top: 4rem;
   padding: 0 1rem;
 }
 
 .img {
   width: 150px;
-  position: relative;
-  bottom: 120px;
 }
-
-/* #img1 {
-  height: 50px;
-  margin: 80px;
-  position: relative;
-  bottom: 70px;
-}
-#img5 {
-  height: 50px;
-  margin: 80px;
-  box-sizing: border-box;
-  position: relative;
-  bottom: 70px;
-} */
 
 /* Brandsolutions css starts here  */
 .wrapper {
+  padding: 3rem 0;
   width: 100%;
-  position: relative;
-  bottom: 1060px;
-  height: 1020px;
   background: linear-gradient(90deg, #f3f9fc 100%, #ebf3ff 100%);
+}
+
+.services {
+  position: relative;
+  margin-left: 10rem;
+  margin-bottom: 5rem;
+  color: #151551;
+  font-size: 50px;
+  font-family: poppins;
+  font-weight: 900;
+}
+
+#line:after {
+  content: "";
+  width: 40%;
+  height: 5px;
+  position: absolute;
+  background: rgb(53, 117, 255);
+  display: block;
+  left: 292px;
+  right: 0px;
+  top: 50%;
+  margin: 0 auto;
+  translate: -50%;
 }
 
 .cols {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  bottom: 445px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -345,14 +340,11 @@ p {
 .col {
   width: 25%;
   cursor: pointer;
-  height: 300px;
 }
 
 .container {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
 }
 
 .front,
@@ -458,6 +450,10 @@ p {
   transform-style: preserve-3d;
 }
 
+.front {
+  padding-top: 3rem;
+}
+
 .front .inner p {
   font-size: 32px;
   margin-bottom: 2rem;
@@ -483,13 +479,9 @@ p {
 }
 
 .back .inner p {
-  position: relative;
-  bottom: 50px;
   line-height: 1.5;
 }
 .back .inner h1 {
-  position: relative;
-  bottom: 50px;
   font-size: 32px;
 }
 
@@ -510,65 +502,28 @@ p {
   background-color: rgb(147, 194, 241);
   width: 130px;
   height: 130px;
-  position: relative;
-  top: 10%;
 }
 #card2 img {
   width: 130px;
   height: 130px;
-  position: relative;
-  top: 10%;
 }
 #card3 img {
   width: 130px;
   height: 130px;
-  position: relative;
-  top: 10%;
 }
 #card4 img {
   width: 130px;
   height: 130px;
-  position: relative;
-  top: 10%;
-}
-
-.services {
-  position: relative;
-  /* why does it do this  */
-  margin: 13em 0;
-  top: 100px;
-  left: 100px;
-  color: #151551;
-  font-size: 50px;
-  font-family: poppins;
-  font-weight: 900;
-}
-
-#line:after {
-  content: "";
-  width: 40%;
-  height: 5px;
-  position: absolute;
-  background: rgb(53, 117, 255);
-  display: block;
-  left: 292px;
-  right: 0px;
-  top: 28px;
-  margin: 0 auto;
-  bottom: -0.75rem;
 }
 
 .full-services-button {
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 250px;
+  margin: 6rem auto 3rem auto;
 }
 
 .full-services-button a {
-  position: relative;
   padding: 20px;
-  width: 220px;
+  width: 100%;
   border-radius: 100px;
   font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif !important;
   cursor: pointer;
@@ -584,9 +539,6 @@ p {
 }
 
 #plan-container {
-  position: relative;
-  bottom: 925px;
-  height: 1050px;
   width: 100%;
   background: linear-gradient(90deg, #f3f9fc 100%, #ebf3ff 100%);
 }
@@ -595,12 +547,11 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 0 1rem 5rem 1rem;
 }
 
 .plan__heading {
   display: flex;
-  margin-bottom: 200px;
 }
 
 .text-title {
@@ -618,7 +569,6 @@ p {
 }
 
 .plan-summary {
-  position: relative;
   padding-left: 1rem;
   margin-top: 4rem;
   letter-spacing: -0.1px;
@@ -638,8 +588,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  position: relative;
-  bottom: 100px;
 }
 
 .steps-container .step-box {
@@ -684,14 +632,12 @@ p {
 
 #portfolio-container {
   width: 100%;
+  padding: 5rem 0;
 }
 
 #portfolio-container h1 {
   width: 100%;
   font-size: 70px;
-  position: relative;
-  bottom: 845px;
-  height: 1050px;
   display: flex;
   justify-content: center;
   background-image: linear-gradient(45deg, #09009f 0%, #00ff95 99%);
@@ -701,11 +647,13 @@ p {
 }
 
 .wrapper-portfolio {
-  position: relative;
-  bottom: 1600px;
   display: flex;
   flex-wrap: wrap;
   padding: 0 1rem;
+}
+
+.portfolio-title {
+  margin-bottom: 4rem;
 }
 
 .container-portfolio {
@@ -727,13 +675,7 @@ p {
   position: relative;
   margin: auto;
   overflow: hidden;
-  bottom: 183px;
 }
-
-/* .portfolio-moveup {
-  position: relative;
-  bottom: 235px;
-} */
 
 .content-portfolio .content-overlay {
   background: rgba(0, 0, 0, 0.7);
@@ -803,9 +745,7 @@ p {
 
 .contact-wrapper {
   width: 100%;
-  position: relative;
-  bottom: 1600px;
-  height: 750px;
+  padding: 4rem 0;
   background: linear-gradient(90deg, #f3f9fc 100%, #ebf3ff 100%);
   display: flex;
   flex-direction: column;
@@ -814,8 +754,8 @@ p {
 }
 
 #title-form {
+  margin: 0 0 3rem 0;
   font-size: 70px;
-  position: relative;
   background-image: linear-gradient(45deg, #09009f 0%, #00ff95 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -906,12 +846,11 @@ p {
 }
 
 .msg-sent {
-  position: relative;
-  top: 152px;
-  left: 267px;
   font-size: 20px;
   border: black 1px solid;
   display: none;
+  text-align: center;
+  padding: 1rem;
 }
 
 .msgAppear {
@@ -919,9 +858,6 @@ p {
 }
 
 .msg-sent-page {
-  position: relative;
-  top: 220px;
-  left: 280px;
   font-size: 20px;
   display: none;
   color: white;
@@ -953,50 +889,31 @@ p {
   background-position: right;
 }
 
-.map {
-  border: solid black 10px;
-  padding: 400px;
-}
-
 .footer-wrapper {
-  position: relative;
-  bottom: 1450px;
+  padding: 5rem 0;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 147px;
 }
 
 .footer-number {
-  width: 31%;
-  margin-right: 3%;
-  position: relative;
+  width: 33%;
   text-align: center;
 }
 .company-email {
-  position: relative;
-  width: 31%;
-  margin-right: 3%;
+  width: 33%;
   text-align: center;
 }
 
 .footer-logo {
-  width: 31%;
-  position: relative;
+  width: 33%;
   text-align: center;
-  bottom: 69px;
 }
 
 .copyrights-info {
-  position: relative;
-  top: 8px;
-}
-
-@media screen and (max-width: 1600px) {
-  #main-frontpage {
-    bottom: 500px;
-  }
+  margin-top: 1rem;
 }
 
 @media screen and (max-width: 1360px) {
@@ -1026,15 +943,9 @@ p {
 
   .img {
     width: 130px;
-    position: relative;
-    bottom: 120px;
   }
 
   h1.services {
-    position: relative;
-    margin: 16em 0;
-    top: 100px;
-    left: 100px;
     color: #151551;
     font-size: 40px;
   }
@@ -1060,6 +971,10 @@ p {
     height: 120px;
   }
 
+  .front {
+    padding-top: 2rem;
+  }
+
   .front .inner p {
     font-size: 24px;
   }
@@ -1081,21 +996,9 @@ p {
     height: 400px;
   }
 
-  .full-services-button {
-    position: absolute;
-    bottom: 150px;
-    left: 50%;
-  }
-
   /****** PORTFOLIO CONTAINER  ******/
   #plan-container {
-    bottom: 925px;
-    height: 1050px;
     width: 100%;
-  }
-
-  .plan__heading {
-    margin-bottom: 10rem;
   }
 
   .text-title {
@@ -1120,7 +1023,7 @@ p {
 
   .steps-container {
     justify-content: start;
-    bottom: 100px;
+    margin-top: 2rem;
   }
 
   .steps-container .step-box {
@@ -1131,10 +1034,6 @@ p {
 
   .steps-container .step-box:last-child {
     margin-right: 0;
-  }
-
-  .steps-container .step-box .icon-plan {
-    position: relative;
   }
 
   .step-box .content h3 {
@@ -1178,13 +1077,13 @@ p {
   }
 
   .main-text {
-    position: relative;
     font-size: 18px;
   }
 
   .main-text p {
     font-size: 17px;
     line-height: 2em;
+    margin-right: 8px;
     color: #8d8d99;
   }
 
@@ -1192,32 +1091,25 @@ p {
   .title2,
   .title3,
   .title4 {
-    font-size: 26px;
-    top: 88px;
-    left: 265px;
+    font-size: 30px;
+    top: 85px;
+    left: 270px;
   }
 
   .img {
     width: 100px;
-    bottom: 100px;
   }
 
   /****** SERVICES CONTAINER  ******/
-  .wrapper {
-    bottom: 1060px;
-    height: 1100px;
-  }
 
   h1.services {
-    margin: 15em 0;
-    top: 80px;
-    left: 40px;
+    margin-left: 5rem;
     font-size: 40px;
   }
 
   #line:after {
     width: 35%;
-    top: 25px;
+    left: 400px;
   }
 
   .col {
@@ -1275,26 +1167,12 @@ p {
     background-color: rgb(147, 194, 241);
   }
 
-  .full-services-button {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }
-
   /* ***** STEPS CONTAINER *****  */
-  #plan-container {
-    height: 1300px;
-  }
 
   .plan__heading {
     flex-direction: column;
-    margin-bottom: 10rem;
     text-align: center;
     margin-top: 2rem;
-  }
-
-  .text-title {
-    position: relative;
   }
 
   .text-title h1 {
@@ -1313,7 +1191,6 @@ p {
 
   .steps-container {
     justify-content: start;
-    bottom: 100px;
   }
 
   .steps-container .step-box {
@@ -1365,7 +1242,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
     text-align: center;
   }
 
@@ -1385,24 +1261,17 @@ p {
     font-size: 30px;
     top: 130px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
   }
 
   .img {
     width: 70px;
-    bottom: 100px;
   }
 
   /****** SERVICES CONTAINER  ******/
-  .wrapper {
-    bottom: 1060px;
-    height: 1600px;
-  }
 
   h1.services {
-    margin: 17em 0;
-    top: 80px;
-    left: 0;
+    margin: 2rem 0;
     font-size: 35px;
     text-align: center;
   }
@@ -1433,7 +1302,6 @@ p {
 
   /****** STEPS CONTAINER ***** */
   #plan-container {
-    height: 1800px;
   }
 
   .plan__heading {
@@ -1520,6 +1388,7 @@ p {
 
   /* FOOTER  */
   .footer-wrapper {
+    padding: 3rem 0;
     flex-direction: column;
   }
 
@@ -1531,8 +1400,8 @@ p {
   }
 
   .footer-logo {
+    margin: 2rem 0;
     width: 100%;
-    bottom: -200px;
   }
 }
 
@@ -1551,23 +1420,15 @@ p {
   .title3,
   .title4 {
     font-size: 24px;
-    top: 110px;
   }
 
   .img {
     width: 50px;
-    bottom: 120px;
   }
 
   /****** SERVICES CONTAINER  ******/
-  .wrapper {
-    bottom: 1060px;
-    height: 1600px;
-  }
-
   h1.services {
-    margin: 18em 0;
-    top: 50px;
+    margin: 2rem 0;
     font-size: 30px;
   }
 
@@ -1584,7 +1445,6 @@ p {
 
   /****** STEPS CONTAINER ***** */
   #plan-container {
-    height: 1800px;
   }
 
   .text-title h1 {
@@ -1654,12 +1514,8 @@ p {
 
   .footer-logo {
     width: 100%;
-    bottom: -200px;
   }
 }
 
 @media (max-width: 424px) {
-  #plan-container {
-    height: 2000px;
-  }
 }

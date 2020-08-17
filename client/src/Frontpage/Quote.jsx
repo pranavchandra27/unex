@@ -68,15 +68,14 @@ const Quote = () => {
         display: flex;
         flex-direction: column;
         align-self: center;
-        margin: 40px auto;
+        margin: 5rem auto;
         max-width: 700px;
-        position: relative;
-        bottom: 1000px;
 
         h1 {
           text-align: center;
           font-family: popins;
           font-weight: bold;
+          font-size: 40px;
         }
 
         p {
@@ -95,26 +94,8 @@ const Quote = () => {
       <div
         className={css`
           display: flex;
-          position: relative;
-          left:201px;
-
-          @media (max-width: 700px) {
-             left: 150px
-          }
-        
-          @media (max-width: 600px) {
-             left: 100px
-          }
-          @media (max-width: 500px) {
-             left: 70px
-          }
-        
-          @media (max-width: 400px) {
-             left: 50px
-          }
-          @media (max-width: 360px) {
-             left: 30px
-          }
+          justify-content: center;
+          align-items: center;
         
           span{
             height: 20px;
@@ -146,7 +127,7 @@ const Quote = () => {
 
         
         `}>
-        {/* a method that returns an array og a given obj  */}
+        {/* a method that returns an array of a given obj  */}
         {Object.keys(quotes).map(index => (
           <span
             onClick={event => handleSetClick(event)}
